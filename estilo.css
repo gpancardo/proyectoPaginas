@@ -1,4 +1,15 @@
-.slide-fwd-center {
-	-webkit-animation: slide-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+#bloqueAnimacion {
+    animation: centro 1.5s ease 0s 1 normal none;
+    text-align: center;
 }
+
+/*Animación del centro*/
+@keyframes centro {
+    0% {
+      transform: scale(0.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
