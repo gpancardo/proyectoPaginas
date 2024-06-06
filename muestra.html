@@ -30,18 +30,9 @@
             </a>
         </ul>
     </nav>
-
-    <div class="card">
+      <div class="card">
         <div class="card-content">
           <div class="media">
-            <div class="media-left">
-              <figure class="image is-4by3">
-                <img
-                  src="./media/ejem/churrosmigue.jpeg"
-                  alt="Placeholder image"
-                />
-              </figure>
-            </div>
             <div class="media-content">
                 <h1 class="text is-size-1"> Churrería Miguel</h1>
                 <h6 class="text is-size-3"> Somos una familia que se dedica a hacer churros con amor, que quizo
@@ -51,21 +42,19 @@
                     ganas, aquí te damos cinco lugares en donde podrás disfrutar de este dulce pecado. </p>
             </div>
           </div>
-    </div>
-    <div class="card-image">
+          <div class="card-image">
           <figure class=" image is-5by4">
-            <img
-              src="./media/ejem/churrosnav.jpg"
-              alt="Placeholder image"
-            />
+            <img src="/media/churrosnav.jpg" alt="Carta churros" id="carousel"/>
           </figure>
         </div>
+        <footer class="card-footer">
+          <button onclick="subir()" class="has-text-warning card-footer-item">Anterior</button>
+          <button onclick="bajar()" class="has-text-warning card-footer-item">Siguiente</button>
+        </footer>
     </div>
-               
-           
-
+    </div>
+    <script src="carouselChurros.js"></script>
 </body>
-
 </html>
 
 
