@@ -1,8 +1,8 @@
 function visibilidadMenu(elemento) {
-    var element = document.getElementById(elemento);
-    if (element.style.visibility === 'visible') {
-        element.style.visibility = 'hidden';
+    let element = document.getElementById(elemento);
+    if (element.style.display === 'none' || window.getComputedStyle(element).display === 'none') {
+        element.style.display = 'block';
     } else {
-        element.style.visibility = 'visible';
+        element.style.display = 'none';
     }
 }
