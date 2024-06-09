@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./media/ejem/churro.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="/bulma/css/bulma.css">
+    <link rel="icon" type="image/x-icon" href="/media/churro.jpeg">
     <title>Churrería Miguel</title>
 </head>
 
@@ -29,7 +30,7 @@
             </a>
         </ul>
     </nav>
-    <!-- Terminado -->
+    <!-- Corregir tamaño de la imagen -->
     <div class="hero">
         <figure class="image is-4by3">
             <img src="./media/churrosmigue.jpeg" alt="Placeholder image" />
@@ -44,28 +45,26 @@
                 </div>
                 <div class="media-content">
                     <p class="title is-size-1">Churrería Miguel</p>
-                    <br>
                     <p class="subtitle is-size-3">Somos una familia que se dedica a hacer churros con amor, que quiso
                         compartir toda esta delicia con el mundo</p>
-                    <br>
                     <p class="text is-size-4">Nunca falta ese antojo de una taza calientita de chocolate o café, y qué
                         mejor manera de acompañarla que con la masa frita cubierta de azúcar de un delicioso churro. Para
                         que no te quedes con las ganas, aquí te damos cinco lugares en donde podrás disfrutar de este
                         dulce pecado.</p>
+                    <p class="content">Nos encontramos ubicados en calle cualquiera esquina quien sabe en la colonia mocte pq xd.
+                        Nuestro horario de atención es de <time datetime="2016-1-1">11:09 AM - 09:00 PM</time></p>
                 </div>
             </div>
-            <p class="content">Nos encontramos ubicados en calle cualquiera esquina quien sabe en la colonia mocte pq xd.
-                Nuestro horario de atención es de <time datetime="2016-1-1">11:09 AM - 09:00 PM</time></p>
         </div>
     </section>
     <!-- Terminado -->
-    <article class="card-image">
+    <article class="hero">
         <figure class="image is-5by4">
             <img src="/media/churrosnav.jpg" alt="Carta churros" id="carousel" />
         </figure>
         <div class="card-footer">
-            <button onclick="subir()" class="has-text-warning card-footer-item">Anterior</button>
-            <button onclick="bajar()" class="has-text-warning card-footer-item">Siguiente</button>
+            <button onclick="subir()" class="button card-footer-item is-warning has-text-primary-100">Anterior</button>
+            <button onclick="bajar()" class="button card-footer-item is-warning has-text-primary-100">Siguiente</button>
         </div>
     </article>
     <section class="card">
@@ -98,13 +97,13 @@
                     </div>
                     <div class="card-content">
                         <button class="button" onclick="visibilidadMenu('menuContenido')">Mostrar menú</button>
-                        <div id="menuContenido" style="display: none;">
-                            <ul>
+                        <div class=" has-background-warning" id="menuContenido" style="display: none;">
+                            <ul style="list-style-type:none; padding: 0%; margin: 0;">
                                 <li>Tradicionales</li>
                                 <li>Glaseados</li>
                                 <li>
                                     <button class="button" onclick="visibilidadMenu('rellenos')">Rellenos</button>
-                                    <div style="display: none;" id="rellenos">
+                                    <div class=" has-background-text" style="display: none;" id="rellenos">
                                         <p>Chocolate</p>
                                         <p>Leche condensada</p>
                                         <p>Otra cosa</p>
