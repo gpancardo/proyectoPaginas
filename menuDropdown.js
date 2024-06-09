@@ -1,7 +1,8 @@
-function subir (elemento){
-    document.getElementById(elemento).style.visibility='hidden';
-}
-
-function bajar(elemento){
-    document.getElementById(elemento).style.visibility='visible';
+function visibilidadMenu(elemento) {
+    var element = document.getElementById(elemento);
+    if (element.style.visibility === 'visible') {
+        element.style.visibility = 'hidden';
+    } else {
+        element.style.visibility = 'visible';
+    }
 }

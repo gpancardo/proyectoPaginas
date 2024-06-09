@@ -29,12 +29,12 @@
             </a>
         </ul>
     </nav>
+    <div class="hero">
+        <figure class="image is-4by3">
+            <img src="./media/churrosmigue.jpeg" alt="Placeholder image" />
+        </figure>
+    </div>
     <div class="card">
-        <div class="card-image">
-            <figure class="image is-4by3">
-                <img src="./media/churrosmigue.jpeg" alt="Placeholder image" />
-            </figure>
-        </div>
         <div class="card-content">
             <div class="media">
                 <div class="media-left">
@@ -75,7 +75,6 @@
     </footer>
     </div>
     </div>
-    <script src="carouselChurros.js"></script>
 
     <div class="card">
         <header class="card-header">
@@ -99,11 +98,6 @@
                             </figure>
                         </div>
                        
-                       <div class="media-is-pulled-right">
-                            <figure class="image is-128x128">
-                                <img src="./media/churrocuadrado.png" alt="Placeholder image" />
-                            </figure>
-                        </div> 
 
                         <div class="media-content">
 
@@ -112,15 +106,16 @@
                             </p>
                             <p class=" subtitle1">“Churros hechos con amor, perfectos para compartir” </p>
                             <p class="subtitle2">Churrería Miguel</p>
+                            <button class="button" onclick="visibilidad(menuContenido)">Mostrar menú</button>
                         </div>
+                        <div class="media is-pulled-right">
+                            <figure class="image is-128x128">
+                                <img src="./media/churrocuadrado.png" alt="Placeholder image" />
+                            </figure>
+                        </div> 
                     </div>
-
-
-
-
-
                     <div class="card-content">
-                        <footer class="card-footer">
+                        <footer class="card-footer" id="menuContenido" style="visibility: hidden;">
                             <p class="card-footer-item">
                                 <span>
                                     Sin Relleno
@@ -149,12 +144,14 @@
                         </footer>
                         <footer class="card-footer">
                             <a href="#" class="card-footer-item">Descarga el Menú</a>
-                            <a href="#" class="card-footer-item">Cerrar</a>
+                        
 
                         </footer>
                     </div>
                 </div>
 
+    <script src="carouselChurros.js"></script>
+    <script src="menuDropdown.js"></script>
 
 </body>
 
